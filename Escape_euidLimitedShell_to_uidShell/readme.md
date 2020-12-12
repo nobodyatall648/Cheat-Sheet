@@ -1,7 +1,6 @@
 # Techniques to Escape EUID Limited Shell to UID Shell
 
 ## For normal euid
-## ===============
 
 1) using public key authentication technique to escape
 
@@ -35,7 +34,7 @@ one line command:
 >python -c 'import os;os.setreuid(1001,1001);os.system("/bin/bash -p")'
 
 ## For root euid
-## =============
+
 1) can use the normal euid user technique
 2) use python to setuid & escape EUID limited shell
 
