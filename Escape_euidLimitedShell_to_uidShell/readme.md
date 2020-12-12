@@ -2,18 +2,28 @@
 
 ## For normal euid
 ## ===============
+
 1) using public key authentication technique to escape
+
 -check the .ssh if we have write permission on authorized_keys
+
 -write our own public key into the authorized_keys file
+
 -ssh into the user with our own private key
+
 //notes: the public/private key can be generated using ssh-keygen
 
 2) using python to setreuid to escape
+
 /*
 current setup
+
 -------------
+
 euid user: 1000(Eve)
+
 uid user: 33 (www-data)
+
 */
 
 rough idea how it works executing step by step:
