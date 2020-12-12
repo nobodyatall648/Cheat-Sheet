@@ -15,16 +15,11 @@
 
 2) using python to setreuid to escape
 
-/*
 current setup
-
 -------------
-
 euid user: 1000(Eve)
 
 uid user: 33 (www-data)
-
-*/
 
 rough idea how it works executing step by step:
 
