@@ -4,23 +4,23 @@
 
 1) using public key authentication technique to escape
 
--check the .ssh if we have write permission on authorized_keys
+\t-check the .ssh if we have write permission on authorized_keys
 
--write our own public key into the authorized_keys file
+\t-write our own public key into the authorized_keys file
 
--ssh into the user with our own private key
+\t-ssh into the user with our own private key
 
-//notes: the public/private key can be generated using ssh-keygen
+\t//notes: the public/private key can be generated using ssh-keygen
 
 2) using python to setreuid to escape
 
-current setup:
+\tcurrent setup:
 
-  euid user: 1000(Eve)
+\t\teuid user: 1000(Eve)
 
-  uid user: 33 (www-data)
+\t\tuid user: 33 (www-data)
 
-rough idea how it works executing step by step:
+\trough idea how it works executing step by step:
 ```
 $python
 >>import os
